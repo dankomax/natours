@@ -4,10 +4,18 @@ const {
   createTour,
   getTour,
   updatetTour,
-  deleteTour
+  deleteTour,
+  checkId
 } = require('../controllers/tourController');
 
 const router = express.Router();
+
+router.param('id', (req, res, next, val) => {
+  console.log(`Tour id is: ${val}`);
+  next();
+});
+
+router.param('id', checkId);
 
 router
   .route('/')
