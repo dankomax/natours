@@ -4,7 +4,8 @@
   "description": "Learning node, express and mongoDB",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "debug": "ndb server.js"
   },
   "author": "Jonas Schmedtmann / Danko Maksym",
   "license": "MIT",
@@ -13,7 +14,8 @@
     "express": "^4.17.1",
     "mongoose": "^5.9.3",
     "morgan": "^1.9.1",
-    "slugify": "^1.4.0"
+    "slugify": "^1.4.0",
+    "validator": "^12.2.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -24,6 +26,7 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.3",
+    "ndb": "^1.1.5",
     "prettier": "^1.19.1"
   },
   "engines": {
